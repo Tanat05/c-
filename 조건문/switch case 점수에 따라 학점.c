@@ -11,7 +11,6 @@ int main(){
     case 8 : printf("B"); break;
     case 7 : printf("C"); break;
     case 6 : printf("D"); break; 
-    case 5 : printf("E"); break;
     default: printf("F"); break;
   }
 }
