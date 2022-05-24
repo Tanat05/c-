@@ -5,7 +5,7 @@ int main() {
   printf("시간과 분을 입력하세요: ");
   scanf("%d %d", &a, &b);
 
-  if (b>30){
+  if (b>=30){
     printf("입력한 시간의 30분 전 시간은 %d시간 %d분", a, b-30);
   }
   else {
