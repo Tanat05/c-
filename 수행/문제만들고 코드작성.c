@@ -11,9 +11,9 @@ int main(){
       for (i=0;i<c;i++){
         sum += a;
         a += b;
-      }
-      printf("1항부터 %lld항까지의 합은 %lld", c, sum);
-    }
+     }
+     printf("1항부터 %lld항까지의 합은 %lld", c, sum);
+     }
     else {
       printf("a와 b는 -10~10 c는 0~10를 입력하세요");
     }
@@ -23,17 +23,17 @@ int main(){
     printf("a, b, c 를 순서대로 입력하시오\n");
     scanf("%lld %lld %lld", &a, &b, &c);
     if (a<=10 && a>=-10 && b<=10 && b>=-10 && c<=10 && c>=0){
-       for (i=0;i<c;i++){
-         sum += a;
-         a *= b;
-       }
-       printf("1항부터 %lld항까지의 합은 %lld", c, sum);
+      for (i=0;i<c;i++){
+        sum += a;
+        a *= b;
+      }
+      printf("1항부터 %lld항까지의 합은 %lld", c, sum);
     }
     else {
       printf("a와 b는 -10~10 c는 0~10를 입력하세요");
     }
   }
   else {
-    printf("1 또는 2를 입력하세요");
+    printf("등차를 선택하려면 1 등비를 선택하려면 2를 입력하세요");
   }
 }
