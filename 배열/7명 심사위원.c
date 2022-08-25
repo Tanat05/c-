@@ -17,7 +17,6 @@ int main(){
   for (i=0;i<7;i++){
     sum += score[i];
   }
-  sum -= max+min;
-  printf("점수는 %f 입니다", (double)sum/5);
+  printf("점수는 %f 입니다", (double)(sum-(max+min))/5);
   return 0;
 }
