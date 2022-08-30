@@ -9,7 +9,7 @@ int main(){
     }
   }
   for (floor=0;floor<3;floor++){
-    printf("%d\n", sumfloor[floor]);
+    printf("%0.1f\n", (double)sumfloor[floor]/4);
   }
   return  0;
 }
