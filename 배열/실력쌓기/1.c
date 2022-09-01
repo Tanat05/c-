@@ -5,19 +5,15 @@ int main(){
   printf("암호를 입력하시오 : ");
   scanf("%s", text);
   printf("결과 1 : ");
-  while (1){
-    if (text[n] == 0)
-      break;
-    printf("%c", text[n]+2);
-    n+=1;
+  for (i=0;i<20;i++){
+    printf("%c", text[i]+2);
   }
   n=0;
   printf("\n결과 2 : ");
-  while (1){
-    if (text[n] == 0)
+  for (i=0;i<20;i++){
+    if (text[i] == 0)
       break;
-    printf("%c", (text[n]*7)%80+48);
-    n+=1;
+    printf("%c", (text[i]*7)%80+48);
   }
   return  0;
 }
