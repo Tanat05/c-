@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-  int i,n=0;
+  int i;
   char text[20]={0};
   printf("암호를 입력하시오 : ");
   scanf("%s", text);
