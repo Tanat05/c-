@@ -8,7 +8,6 @@ int main(){
   for (i=0;i<20;i++){
     printf("%c", text[i]+2);
   }
-  n=0;
   printf("\n결과 2 : ");
   for (i=0;i<20;i++){
     if (text[i] == 0)
