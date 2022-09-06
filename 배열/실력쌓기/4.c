@@ -25,7 +25,7 @@ int main(){
   char dna[10];
   scanf("%s", dna);
   for (i=0;i<10;i++){
-    n += atoi(dna[i]);
+    n += dna[i]-48;
   }
   
   if (n%7 == 4){
