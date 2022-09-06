@@ -20,7 +20,6 @@ int main(){
 
 
 #include <stdio.h>
-#include <stdlib.h>
 int main(){
   int i, n=0 , x=0;
   char dna[10];
