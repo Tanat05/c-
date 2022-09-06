@@ -20,19 +20,21 @@ int main(){
 
 
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
-  int i, n=0 , x=0;
-  char dna[10];
-  printf("용의자의 DNA 정보를 입력하세요 : ");
+  int i, n=0;
+  char c, dna[11];
+  printf("용의자의 DNA 정보를 입력하세요. : ");
   scanf("%s", dna);
   for (i=0;i<10;i++){
-    n += dna[i]-48;
+    c = dna[i];
+    n += atoi(&c);
   }
   
   if (n%7 == 4){
-    printf("범인");
+    printf("범인\n");
   }
   else{
-    printf("일반인");
+    printf("일반인\n");
   }  
 }
