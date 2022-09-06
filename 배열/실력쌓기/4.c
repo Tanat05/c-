@@ -5,7 +5,7 @@ int main(){
   scanf("%d", &dna);
   while (1){
     n += dna%10;
-    dna = dna/10;
+    dna /= 10;
     if (dna%10 == 0)
       break;
   }
