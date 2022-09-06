@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main(){
   int n=0;
   long long int dna;
