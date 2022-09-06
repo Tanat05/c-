@@ -1,13 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
-  int i, n=0 , x=0;
-  int dna;
-  scanf("%d", &dna);
-  while (1){
+  int n=0;
+  long long int dna;
+  scanf("%lld", &dna);
+  while (dna>0){
     n += dna%10;
     dna /= 10;
-    if (dna%10 == 0)
-      break;
   }
   
   if (n%7 == 4){
