@@ -1,8 +1,8 @@
 #include <stdio.h>
 int f(int weight[3]){
-  int t;
-  for (int i=0;i<3;i++){
-    for (int j=i+1;j<4;j++){
+  int i, j, t;
+  for (i=0;i<3;i++){
+    for (j=i+1;j<3;j++){
       if(weight[i]>weight[j]){
         t = weight[i];
         weight[i] = weight[j];
@@ -10,7 +10,8 @@ int f(int weight[3]){
       }
     }
   }
-} 
+  return 0;
+}
 int main(){
   int weight[3];
   printf("3사람의 몸무게를 차례대로 입력하시오. : ");
