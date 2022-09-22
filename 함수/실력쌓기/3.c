@@ -1,21 +1,18 @@
 #include <stdio.h>
-int f(int weight[3]){
-  int i, j, t;
-  for (i=0;i<3;i++){
-    for (j=i+1;j<3;j++){
-      if(weight[i]>weight[j]){
-        t = weight[i];
-        weight[i] = weight[j];
-        weight[j]= t;
-      }
-    }
+int f(int *a, int *b){
+  int t;
+  if (*a>*b){
+    t = *a;
+    *a = *b;
+    *b = t;
   }
-  return 0;
 }
 int main(){
-  int weight[3];
+  int a, b, c;
   printf("3사람의 몸무게를 차례대로 입력하시오. : ");
-  scanf("%d %d %d", &weight[0], &weight[1], &weight[2]);
-  f(weight);
-  printf("%d %d %d", weight[0], weight[1], weight[2]);
+  scanf("%d %d %d", &a, &b, &c);
+  f(&a, &b);
+  f(&b, &c);
+  f(&a, &b);
+  printf("%d %d %d", a, b, c);
 }  
