@@ -14,7 +14,7 @@ void process(){
 }
 
 void output(){
-  int i,aa;
+  int i;
   if (error==1){
     printf("번호 초과 오류");
   }
