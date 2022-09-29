@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int n,k,cnt,error;
+int n,k,cnt,error=0;
 
 void input(){
   scanf("%d %d", &n, &k);
@@ -8,11 +8,14 @@ void input(){
 
 void process(){
   cnt = n / k;
+  if (cnt>9999){
+    error = 1;
+  }
 }
 
 void output(){
   int i,aa;
-  if (cnt>9999){
+  if (error==1){
     printf("번호 초과 오류");
   }
   else{
