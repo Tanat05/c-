@@ -13,7 +13,7 @@ void process(){
 void output(){
   int i,aa;
   if (cnt>9999){
-    printf("error");
+    printf("번호 초과 오류");
   }
   else{
     for(i=0;i<cnt;i++){
