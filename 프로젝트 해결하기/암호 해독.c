@@ -19,7 +19,7 @@ void process(char text){
 			text2[i] = text1[i] - 3;
 }
 
-int output(){
+void output(){
   printf("%s", text2);
 }
 
